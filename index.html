@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galería de Imágenes ESPE</title>
+  <script type="module" src="/components/espe-image-gallery.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+    }
+    header{
+        background-color: rgb(42, 18, 100);
+        border: 80px;
+        border: 1px solid ;
+        border-radius: 15px 0px 15px 0px;
+    }
+    h1{
+        text-align: center;
+        color: #fcfdff;
+    }
+    h3{
+        color: palevioletred;
+    }
+  </style>
+</head>
+<body>
+<header>
+      <h1>Galería de Imágenes ESPE</h1>
+</header>
+ <h3> ~ By Camila Obando</h3>
+ <p>Puedes dar clic en siguiente para ver más imagenes.</p>
+      <espe-image-gallery></espe-image-gallery>
+  <script type="module">
+    const gallery = document.querySelector('espe-image-gallery');
+    gallery.images = [
+      './assets/1.jpeg',
+      './assets/2.jpeg',
+      './assets/3.jpeg'
+    ];
+  </script>
+</body>
+</html>
